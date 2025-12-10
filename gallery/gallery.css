@@ -13,11 +13,16 @@ section {
 #gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 300px 1fr;
+  grid-template-rows: auto 400px 1fr;
+  row-gap: 50px;
+  overflow: hidden;
+  font-size: small;
+  font-weight: 400;
 }
 .title {
   margin-bottom: 20px;
   margin-left: 0;
+  text-align: left;
 }
 div .card {
   display: flex;
@@ -28,9 +33,9 @@ div .card {
   border: none;
 }
 .thumb {
-  width: 300px;
+  width: 400;
   margin-right: 20px;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .caption {

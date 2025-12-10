@@ -6,7 +6,7 @@ async function loadGallery() {
     if (!res.ok) throw new Error(res.statusText);
     const images = await res.json();
     if (images.length === 0) {
-      gallery.innerHTML = '<p>No Images yes</p> Go to <a href="../admin/addPlaces.html">Add places</a>';
+      gallery.innerHTML = '<p>No Images yet. <br><a href="../admin/addPlaces.html">Add places</a><p></p>';
       return;
     }
     gallery.innerHTML = "";
@@ -24,7 +24,7 @@ async function loadGallery() {
       caption.innerHTML = `
         <strong>${img.place || ""}</strong><br>
         Days: ${img.days || ""} days <br>
-        Price: USD $${img.price} <br>
+        Price: $${img.price || ""} <br>
         ${img.description || "-"}<br>
         Facilities: ${img.facilities || ""}        
       `;
