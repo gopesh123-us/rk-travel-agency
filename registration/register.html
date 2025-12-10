@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../navbar/navbar.css">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <h1>Register</h1>
+      <form action="" class="row main-form">
+
+        <aside class="col-12 col-md-6">
+          <label for="fullname">Name</label>
+          <input type="text" id="fullname" name="name" placeholder="Enter name" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter email" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="contact">Contact</label>
+          <input type="text" id="contact" name="contact" placeholder="Enter phone number" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="gender" value="male">Male</input>
+          <input type="radio" name="gender" id="gender" value="female">Female</input>
+          <input type="radio" name="gender" id="gender" value="other">Other</input>
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" placeholder="dd-mm-yyyy" />
+        </aside>
+
+        <aside class="col-12">
+          <label for="address">Address</label>
+          <textarea name="address" id="address"></textarea>
+        </aside>
+        <aside class="col-12 text-center">
+          <button type="submit" class="btn btn-secondary bg-gray w-50">Submit</button>
+        </aside>
+      </form>
+    </section>
+  </main>
+  <script src="../navbar/navbar.js"></script>
+  <script src="../bootstrap/bootstrap.js"></script>
+  <script src="register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-top: 10px;
+}
+
+.main-form {
+  height: 80%;
+  border: 1px solid lightgray;
+  margin-top: 50px;
+  background: #f1f1f1;
+}
+form label {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+form input {
+  border: 1px solid rgb(190, 190, 190);
+  width: 80%;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  padding-left: 15px;
+  box-shadow: 1px 1px 0.5px rgba(104, 103, 103, 0.9);
+}
+form textarea {
+  width: 80%;
+  height: 130px;
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+}
+
+form input[type="radio"] {
+  width: 30px;
+  box-shadow: none;
+}

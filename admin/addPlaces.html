@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../navbar/navbar.css">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../registration/registration.css">
+  <link rel="stylesheet" href="./addPlaces.css">
+</head>
+
+<body>
+  <main>
+    <div id="status"></div>
+    <section class="container">
+      <h1>Upload Places</h1>
+      <form class="row main-form">
+        <aside class="col-12 col-md-6">
+          <label for="image-file">Image</label>
+          <input type="file" id="image-file" name="image-file" accept="image/*" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="place">Place</label>
+          <input type="text" id="place" name="place" placeholder="Enter destination" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="days">Package Days</label>
+          <input type="number" id="days" name="days" placeholder="Enter number of days" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="price">Price</label>
+          <input type="number" id="price" name="price" placeholder="Enter price in USD &dollar;" />
+        </aside>
+
+        <aside class="col-12 col-md-6">
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+        </aside>
+
+        <section class="facilities">
+          <label>Select facilities</label>
+          <input type="checkbox" id="airfare" name="facilities" value="airfare"></input> <label for="airfare" class="chkbox-label">Airfare</label>
+          <br>
+          <input type="checkbox" id="lodging" name="facilities" value="lodging"></input> <label for="lodging" class="chkbox-label">Lodging</label>
+          <br>
+          <input type="checkbox" id="transport" name="facilities" value="transport"></input> <label for="transport" class="chkbox-label">Transport</label>
+          <br>
+          <input type="checkbox" id="visa" name="facilities" value="visa"></input> <label for="visa" class="chkbox-label">Visa Services</label>
+          <br>
+        </section>
+
+        <aside class="col-12 text-center">
+          <button type="submit" class="btn btn-secondary bg-gray w-50">Add</button>
+        </aside>
+      </form>
+    </section>
+
+  </main>
+  <script src="../navbar/navbar.js"></script>
+  <script src="../bootstrap/bootstrap.js"></script>
+  <script src="./addPlaces.js"></script>
+</body>
+
+</html>
